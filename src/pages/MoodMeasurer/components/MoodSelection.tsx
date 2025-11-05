@@ -1,7 +1,7 @@
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 import MoodSelector from "./MoodSelector";
 import moodOptions from "../../../data/moodOptions";
-import type { MoodOption } from "../../interfaces";
+import type { MoodOption } from "../interfaces";
 import type React from "react";
 
 interface MoodSelectionProps {
