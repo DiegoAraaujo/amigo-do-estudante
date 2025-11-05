@@ -59,7 +59,7 @@ const TimerPanel = () => {
     <div
       className={`p-6 ${
         darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"
-      } mb-3 flex flex-col items-center gap-6 rounded-xl`}
+      } mb-3 flex flex-col items-center gap-6 rounded-xl h-full`}
     >
       <p
         className={`${
