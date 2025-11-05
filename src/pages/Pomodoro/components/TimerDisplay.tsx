@@ -12,7 +12,9 @@ const PomodoroTimer = ({ currentTime }: PomodoroTimerProps) => {
   return (
     <div className="flex w-full max-w-96 flex-col items-center gap-6">
       <p
-        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-6xl font-bold tracking-wider sm:text-7xl`}
+        className={`${
+          darkTheme ? "text-primary-dark" : "text-primary-light"
+        } text-6xl font-bold tracking-wider sm:text-7xl`}
       >
         {formatTime(currentTime)}
       </p>
