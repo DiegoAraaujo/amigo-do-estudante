@@ -1,7 +1,7 @@
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 import factors from "../../../data/factors";
 import FactorSelector from "./FactorSelector";
-import type { Factor } from "../../interfaces";
+import type { Factor } from "../interfaces";
 
 interface FactorsSelectionProps {
   selectedFactors: Factor[];
