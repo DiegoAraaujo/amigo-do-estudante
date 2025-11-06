@@ -3,10 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavigationMenuDesktop from "./NavigationMenuDesktop";
 import NavigationMenuMobile from "../pages/Dashboard/components/NavigationMenuMobile";
 import { useDarkTheme } from "../hooks/UseDarkTheme";
+import { Link } from "react-router-dom";
+import UserDropdown from "./UserDropdown";
 
 const Header = () => {
   const { darkTheme } = useDarkTheme();
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
+  const [dropDownVisible, setDropDownVisible] = useState<boolean>(false);
 
   return (
     <header
@@ -39,8 +42,16 @@ const Header = () => {
 
         <NavigationMenuDesktop />
 
-        <div className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-4 border-[#D6C9F8] bg-gradient-to-bl from-[#A27FF4] to-[#B59AF6] font-medium text-white">
-          AS
+        <div className="relative">
+          <div
+            className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-4 border-[#D6C9F8] bg-gradient-to-bl from-[#A27FF4] to-[#B59AF6] font-medium text-white"
+            onClick={() => {
+              setDropDownVisible(!dropDownVisible);
+            }}
+          >
+            AS
+          </div>
+          {dropDownVisible && <UserDropdown />}
         </div>
       </div>
 
