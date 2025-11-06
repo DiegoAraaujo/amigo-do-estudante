@@ -8,6 +8,7 @@ import MoodMeasurer from "./pages/MoodMeasurer";
 import Container from "./components/Container";
 import Pomodoro from "./pages/Pomodoro";
 import Community from "./pages/Community";
+import Profile from "./pages/Profile";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
                 </PomodoroProvider>
               }
             />
+            <Route path="/profile" element={<Profile/>}/>
             <Route path="/community/:subpage?" element={<Community />} />
             <Route path="/:period/:subpage" element={<Dashboard />} />
             <Route path="/moodmeasurer/:subpage?" element={<MoodMeasurer />} />
