@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header
       className={`relative mb-6 ${
-        darkTheme ? "bg-surface-dark" : "bg-light"
+        darkTheme ? "bg-surface-dark" : "bg-surface-light"
       } px-6 sticky top-0 z-50`}
     >
       <div className="h-full w-full"></div>
