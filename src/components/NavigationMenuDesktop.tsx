@@ -101,11 +101,11 @@ const NavigationMenuDesktop = () => {
         </AnimatePresence>
       </div>
 
-      <button
+      <Link to="/community"
         className={`flex cursor-pointer items-center justify-center rounded-xl px-4 py-2 text-sm font-medium hover:bg-[#5AA6F2] hover:text-white ${darkTheme ? "text-primary-dark" : "text-primary-light"}`}
       >
         Comunidade
-      </button>
+      </Link>
     </div>
   );
 };
