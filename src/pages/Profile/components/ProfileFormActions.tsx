@@ -28,18 +28,14 @@ const ProfileFormActions = ({
             Cancelar
           </button>
           <button
-            className={`px-8 py-1 rounded-lg cursor-pointer ${
-              darkTheme
-                ? "bg-blue-600 text-primary-dark"
-                : "bg-light text-primary-light"
-            }`}
+            className={`px-8 py-1 rounded-lg cursor-pointer bg-blue-600 text-primary-dark font-medium`}
           >
             Salvar
           </button>
         </div>
       ) : (
         <button
-          className={`px-8 py-1 rounded-lg cursor-pointer ${
+          className={`px-8 py-1 rounded-lg cursor-pointer font-medium ${
             darkTheme
               ? "bg-dark text-primary-dark"
               : "bg-light text-primary-light"
