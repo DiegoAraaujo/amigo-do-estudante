@@ -14,47 +14,72 @@ const NavigationMenuMobile = ({ setMenuVisible }: NavigationMenuProps) => {
     <div className="px-6">
       <div className="flex justify-end py-2">
         <i
-          className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} bi bi-x cursor-pointer text-2xl hover:text-[#875AF2]`}
+          className={`${
+            darkTheme ? "text-primary-dark" : "text-primary-light"
+          } bi bi-x cursor-pointer text-2xl hover:text-[#875AF2]`}
           onClick={() => {
             setMenuVisible(false);
           }}
         />
       </div>
       <div
-        className={`${darkTheme ? "border-muted-dark" : "border-muted-light"} mb-6 flex flex-col gap-4 border-b py-6`}
+        className={`${
+          darkTheme ? "border-muted-dark" : "border-muted-light"
+        } mb-6 flex flex-col gap-4 border-b py-6`}
       >
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => {
+            setMenuVisible(false);
+          }}
+        >
           <NavigationItem icon="bi-columns-gap" title="Dashboard" />
         </Link>
       </div>
 
       <div className="mb-6">
         <p
-          className={`mb-2 text-xs font-semibold ${darkTheme ? "text-muted-dark" : "text-muted-light"}`}
+          className={`mb-2 text-xs font-semibold ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          }`}
         >
           FERRAMENTAS DE ESTUDO
         </p>
-        <Link to="/pomodoro">
+        <Link
+          to="/pomodoro"
+          onClick={() => {
+            setMenuVisible(false);
+          }}
+        >
           <NavigationItem
             icon="bi bi-stopwatch"
             title="Pomodoro"
             description="Técnica de foco"
           />
         </Link>
-        <NavigationItem
-          icon="bi bi-calendar"
-          title="Planejamento"
-          description="Organize seus estudos"
-        />
+        <Link to="/planning">
+          <NavigationItem
+            icon="bi bi-calendar"
+            title="Planejamento"
+            description="Organize seus estudos"
+          />
+        </Link>
       </div>
 
       <div className="mb-6">
         <p
-          className={`mb-2 text-xs font-semibold ${darkTheme ? "text-muted-dark" : "text-muted-light"}`}
+          className={`mb-2 text-xs font-semibold ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          }`}
         >
           BEM-ESTAR
         </p>
-        <Link to="/moodmeasurer">
+        <Link
+          to="/moodmeasurer"
+          onClick={() => {
+            setMenuVisible(false);
+          }}
+        >
           <NavigationItem
             icon="bi bi-emoji-smile"
             title="Felizômetro"
@@ -68,18 +93,27 @@ const NavigationMenuMobile = ({ setMenuVisible }: NavigationMenuProps) => {
         />
       </div>
 
-      <Link to="/community">
+      <div>
         <p
-          className={`mb-2 text-xs font-semibold ${darkTheme ? "text-muted-dark" : "text-muted-light"}`}
+          className={`mb-2 text-xs font-semibold ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          }`}
         >
           COMUNIDADE
         </p>
-        <NavigationItem
-          icon="bi bi-people-fill"
-          title="Comunidade"
-          description="Conecte-se"
-        />
-      </Link>
+        <Link
+          to="/community"
+          onClick={() => {
+            setMenuVisible(false);
+          }}
+        >
+          <NavigationItem
+            icon="bi bi-people-fill"
+            title="Comunidade"
+            description="Conecte-se"
+          />
+        </Link>
+      </div>
     </div>
   );
 };
