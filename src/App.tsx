@@ -9,6 +9,7 @@ import Container from "./components/Container";
 import Pomodoro from "./pages/Pomodoro";
 import Community from "./pages/Community";
 import Profile from "./pages/Profile";
+import Planning from "./pages/Planning";
 
 const App = () => {
   return (
@@ -26,10 +27,11 @@ const App = () => {
                 </PomodoroProvider>
               }
             />
-            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/profile" element={<Profile />} />
             <Route path="/community/:subpage?" element={<Community />} />
             <Route path="/:period/:subpage" element={<Dashboard />} />
             <Route path="/moodmeasurer/:subpage?" element={<MoodMeasurer />} />
+            <Route path="/planning/:subpage?" element={<Planning />} />
           </Routes>
         </BrowserRouter>
       </Container>

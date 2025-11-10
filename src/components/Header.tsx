@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavigationMenuDesktop from "./NavigationMenuDesktop";
-import NavigationMenuMobile from "../pages/Dashboard/components/NavigationMenuMobile";
+import NavigationMenuMobile from "./NavigationMenuMobile";
 import { useDarkTheme } from "../hooks/UseDarkTheme";
-import { Link } from "react-router-dom";
 import UserDropdown from "./UserDropdown";
 
 const Header = () => {
@@ -15,9 +14,16 @@ const Header = () => {
     <header
       className={`relative mb-6 ${
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
-      } px-6 sticky top-0 z-50`}
+      } px-6 sticky top-0 z-40`}
     >
-      <div className="h-full w-full"></div>
+      {dropDownVisible && (
+        <div
+          className="h-dvh w-full bg-dark/60 absolute left-0 top-0 z-50"
+          onClick={() => {
+            setDropDownVisible(false);
+          }}
+        ></div>
+      )}
       <div className="m-auto flex w-full max-w-7xl items-center justify-between py-4">
         <div className="flex items-center gap-3 text-2xl">
           <i
@@ -51,10 +57,11 @@ const Header = () => {
           >
             AS
           </div>
-          {dropDownVisible && <UserDropdown />}
+          {dropDownVisible && (
+            <UserDropdown setDropDownVisible={setDropDownVisible} />
+          )}
         </div>
       </div>
-
       <AnimatePresence>
         {menuVisible && (
           <>
