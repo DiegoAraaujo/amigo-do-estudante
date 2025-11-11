@@ -12,7 +12,7 @@ const AddMaterialModal = ({
 
   return (
     <div
-      className="bg-black/30 fixed top-0 left-0 w-full h-full flex justify-center items-center z-50"
+      className="bg-black/30 fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 p-6"
       onClick={() => setIsAddMaterialModalOpen(false)}
     >
       <div
