@@ -10,7 +10,11 @@ const SessionCard = ({ subject, time }: SessionCardProps) => {
 
   return (
     <div
-      className={`${darkTheme ? "bg-card-dark text-primary-dark shadow-sm shadow-purple-700/30" : "bg-card-light text-primary-light"} tetx-sm rounded-xl px-6 py-2`}
+      className={`border ${
+        darkTheme
+          ? "bg-card-dark text-primary-dark border-outline-dark"
+          : "bg-card-light text-primary-light border-outline-light"
+      } text-sm rounded-xl p-6`}
     >
       Você estudou {subject} por {time} minutos{" "}
       <i className="bi bi-rocket-takeoff-fill animate-bounce text-purple-700" />

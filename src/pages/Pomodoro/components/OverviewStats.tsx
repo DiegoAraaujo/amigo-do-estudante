@@ -5,50 +5,78 @@ const OverviewStats = () => {
 
   return (
     <div
-      className={`${darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"} rounded-xl p-6`}
+      className={`${
+        darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"
+      } rounded-xl p-6`}
     >
       <p
-        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} mb-6 text-xl font-bold sm:text-2xl`}
+        className={`${
+          darkTheme ? "text-primary-dark" : "text-primary-light"
+        } mb-6 text-xl font-bold sm:text-2xl`}
       >
         Visão Geral
       </p>
-      <div className={`${darkTheme ? "" : ""} grid grid-cols-2 gap-6`}>
+      <div className={`grid grid-cols-2 gap-6`}>
         <div
-          className={`${darkTheme ? "bg-card-dark" : "bg-card-light"} flex flex-col items-center rounded-xl p-6`}
+          className={`border ${
+            darkTheme
+              ? "bg-card-dark border-outline-dark"
+              : "bg-card-light border-outline-light"
+          } flex flex-col items-center rounded-xl p-6`}
         >
           <p className="text-2xl font-bold text-blue-500">0</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light text-sm"}`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light text-sm"
+            }`}
           >
             Hoje
           </p>
         </div>
         <div
-          className={`${darkTheme ? "bg-card-dark" : "bg-card-light"} flex flex-col items-center rounded-xl p-6`}
+          className={`border ${
+            darkTheme
+              ? "bg-card-dark border-outline-dark"
+              : "bg-card-light border-outline-light"
+          } flex flex-col items-center rounded-xl p-6`}
         >
           <p className="text-2xl font-bold text-purple-500">23</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-sm`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light"
+            } text-sm`}
           >
             Semana
           </p>
         </div>
         <div
-          className={`${darkTheme ? "bg-card-dark" : "bg-card-light"} flex flex-col items-center rounded-xl p-6`}
+          className={`border ${
+            darkTheme
+              ? "bg-card-dark border-outline-dark"
+              : "bg-card-light border-outline-light"
+          } flex flex-col items-center rounded-xl p-6`}
         >
           <p className="text-2xl font-bold text-green-500">89</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-sm`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light"
+            } text-sm`}
           >
             Mês
           </p>
         </div>
         <div
-          className={`${darkTheme ? "bg-card-dark" : "bg-card-light"} flex flex-col items-center rounded-xl p-6`}
+          className={`border ${
+            darkTheme
+              ? "bg-card-dark border-outline-dark"
+              : "bg-card-light border-outline-light"
+          } flex flex-col items-center rounded-xl p-6`}
         >
           <p className="text-2xl font-bold text-orange-500">5</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-sm`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light"
+            } text-sm`}
           >
             Sequência
           </p>

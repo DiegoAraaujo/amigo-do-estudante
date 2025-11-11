@@ -2,7 +2,6 @@ import PreferencesSection from "./PreferencesSection";
 import TimerSettingsSection from "./TimerSettingsSection";
 
 const PomodoroSettings = () => {
-
   return (
     <div>
       <div className="mb-6 grid gap-6 lg:grid-cols-2">

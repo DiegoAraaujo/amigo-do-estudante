@@ -55,10 +55,10 @@ const PreferencesSection = () => {
               type="number"
               name=""
               id=""
-              className={`rounded-xl p-2 ${
+              className={`rounded-xl py-2 px-4 focus:outline-none border ${
                 darkTheme
-                  ? "text-primary-dark bg-dark"
-                  : "text-primary-light bg-light"
+                  ? "text-primary-dark bg-dark border-outline-dark"
+                  : "text-primary-light bg-light border-outline-light"
               }`}
               value={pomodorosPerDay}
               onChange={(e) => {
@@ -128,11 +128,11 @@ const PreferencesSection = () => {
                 </button>
               </div>
               <p
-                className={`text-md flex h-8 w-8 items-center justify-center rounded-full border p-2 ${
+                className={`text-base font-medium flex h-10 w-10 items-center justify-center rounded-full p-2 border ${
                   darkTheme
-                    ? "text-primary-dark border-muted-dark"
-                    : "text-primary-light border-muted-light"
-                } border-blue-700`}
+                    ? "text-primary-dark border-outline-dark"
+                    : "text-primary-light border-outline-light"
+                }`}
               >
                 {cyclesUntilLongBreak}
               </p>

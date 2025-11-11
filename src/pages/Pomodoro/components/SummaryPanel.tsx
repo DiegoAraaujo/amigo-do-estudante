@@ -5,18 +5,24 @@ const SummaryPanel = () => {
 
   return (
     <div
-      className={`${darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"} flex-1 rounded-xl p-6`}
+      className={`${
+        darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"
+      } flex-1 rounded-xl p-6`}
     >
       <p
-        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-xl sm:text-2xl font-semibold`}
+        className={`${
+          darkTheme ? "text-primary-dark" : "text-primary-light"
+        } text-xl sm:text-2xl font-semibold`}
       >
         Resumo
       </p>
-      <div className="grid grid-cols-2 p-6">
+      <div className="grid grid-cols-2 py-6">
         <div className="flex flex-col items-center">
           <p className="text-3xl font-bold text-blue-600">0</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-xs`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light"
+            } text-xs`}
           >
             Hoje
           </p>
@@ -24,7 +30,9 @@ const SummaryPanel = () => {
         <div className="flex flex-col items-center">
           <p className="text-3xl font-bold text-green-500">5</p>
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-xs`}
+            className={`${
+              darkTheme ? "text-muted-dark" : "text-muted-light"
+            } text-xs`}
           >
             Dias
           </p>

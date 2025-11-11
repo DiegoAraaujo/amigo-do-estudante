@@ -4,7 +4,7 @@ import ProductivityStats from "./ProductivityStats";
 
 const PomodoroStatistics = () => {
   return (
-    <section>
+    <section className="flex flex-col gap-6">
       <div className="mb-3 grid gap-6 lg:grid-cols-2">
         <OverviewStats />
         <ProductivityStats />

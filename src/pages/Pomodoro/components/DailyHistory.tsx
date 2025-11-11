@@ -18,12 +18,12 @@ const DailyHistory = () => {
       </p>
       <div className="flex flex-col items-center p-6">
         <p
-          className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-lg md:text-xl font-medium`}
+          className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-base md:text-xl font-medium`}
         >
           Nenhuma sessão hoje
         </p>
         <p
-          className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-center text-sm md:text-base`}
+          className={`${darkTheme ? "text-muted-dark" : "text-muted-light"} text-center text-xs md:text-base`}
         >
           Complete seu primeiro pomodoro para ver seu histórico!
         </p>
