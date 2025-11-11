@@ -28,7 +28,7 @@ const PlanningNav = ({ selectedSubPage }: PlanningNavProps) => {
         to="/planning/mytasks"
         className={` rounded-xl px-6 py-2 flex justify-center font-medium ${
           selectedSubPage === "mytasks"
-            ? "bg-blue-500 text-primary-dark"
+            ? "bg-purple-700 text-primary-dark"
             : darkTheme
             ? "text-primary-dark"
             : "text-primary-light"
