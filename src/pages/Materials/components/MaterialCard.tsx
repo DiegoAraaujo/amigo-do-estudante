@@ -9,14 +9,14 @@ const MaterialCard = () => {
         darkTheme
           ? "bg-card-dark border-outline-dark"
           : "border-outline-light bg-card-light"
-      } flex justify-between rounded-xl p-6`}
+      } flex md:justify-between rounded-xl p-6 md:flex-row flex-col gap-4`}
     >
       <div className="flex items-center gap-6">
-        <div>
+        <div className="hidden md:block">
           <i
             className={`${
               darkTheme ? "text-primary-dark" : "text-primary-light"
-            } bi bi-link-45deg text-3xl`}
+            } bi bi-link-45deg md:text-3xl text-2xl`}
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -43,17 +43,21 @@ const MaterialCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center gap-6">
-        <i
-          className={`cursor-pointer bi bi-box-arrow-up-right ${
-            darkTheme ? "text-primary-dark" : "text-primary-light"
-          }`}
-        />
-        <i
-          className={`cursor-pointer bi bi-trash3 ${
-            darkTheme ? "text-primary-dark" : "text-primary-light"
-          }`}
-        />
+      <div className="flex items-center gap-6 md:justify-start justify-end">
+        <button>
+          <i
+            className={`cursor-pointer bi bi-box-arrow-up-right ${
+              darkTheme ? "text-primary-dark" : "text-primary-light"
+            }`}
+          />
+        </button>
+        <button>
+          <i
+            className={`cursor-pointer bi bi-trash3 ${
+              darkTheme ? "text-primary-dark" : "text-primary-light"
+            }`}
+          />
+        </button>
       </div>
     </div>
   );
