@@ -16,15 +16,15 @@ const MoodSelection = ({
   const { darkTheme } = useDarkTheme();
 
   return (
-    <div className="mb-6 flex flex-col">
+    <div className="mb-6 flex flex-col gap-3">
       <h2
-        className={`mb-3 text-sm font-medium ${
+        className={`text-sm font-medium ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >
         Escolha seu humor
       </h2>
-      <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
         {moodOptions.map((mood) => (
           <MoodSelector
             key={mood.id}
