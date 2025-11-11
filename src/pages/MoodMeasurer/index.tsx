@@ -40,46 +40,70 @@ const MoodMeasurer = () => {
   ];
 
   return (
-    <section className="p-6">
-      <div className="m-auto w-full max-w-7xl">
-        <div className="mb-6 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {statsCards.map((card) => (
-            <StatsCard
-              key={card.label}
-              color={card.color}
-              label={card.label}
-              icon={card.icon}
-              labelIcon={card.labelIcon}
-              stats={card.stats}
-            />
-          ))}
-        </div>
-        <div
-          className={`mb-6 grid w-full grid-cols-3 ${darkTheme ? "bg-surface-dark" : "bg-surface-light"} rounded-xl px-6 py-2`}
-        >
-          <Link
-            to="/moodmeasurer/moodregisterform"
-            className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${darkTheme ? "text-muted-dark" : "text-muted-light"} py-2 text-sm font-medium ${selectedSubpage === "moodregisterform" ? (darkTheme ? "bg-card-dark" : "bg-card-light") : ""} text-center`}
-          >
-            Registro
-          </Link>
-          <Link
-            to="/moodmeasurer/moodhistory"
-            className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${darkTheme ? "text-muted-dark" : "text-muted-light"} py-2 text-sm font-medium ${selectedSubpage === "moodhistory" ? (darkTheme ? "bg-card-dark" : "bg-card-light") : ""} text-center`}
-          >
-            Historico
-          </Link>
-          <Link
-            to="/moodmeasurer/moodoverview"
-            className={`flex cursor-pointer items-center justify-center rounded-md ${darkTheme ? "text-muted-dark" : "text-muted-light"} px-6 py-2 text-sm font-medium ${selectedSubpage === "moodoverview" ? (darkTheme ? "bg-card-dark" : "bg-card-light") : ""} text-center`}
-          >
-            Visão Geral
-          </Link>
-        </div>
-        {selectedSubpage === "moodregisterform" && <MoodRegisterForm />}
-        {selectedSubpage === "moodhistory" && <MoodHistory />}
-        {selectedSubpage === "moodoverview" && <MoodOverview />}
+    <section>
+      <div className="mb-6 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {statsCards.map((card) => (
+          <StatsCard
+            key={card.label}
+            color={card.color}
+            label={card.label}
+            icon={card.icon}
+            labelIcon={card.labelIcon}
+            stats={card.stats}
+          />
+        ))}
       </div>
+      <div
+        className={`mb-6 grid w-full grid-cols-3 ${
+          darkTheme ? "bg-surface-dark" : "bg-surface-light"
+        } rounded-xl px-6 py-2`}
+      >
+        <Link
+          to="/moodmeasurer/moodregisterform"
+          className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          } py-2 text-sm font-medium ${
+            selectedSubpage === "moodregisterform"
+              ? darkTheme
+                ? "bg-card-dark"
+                : "bg-card-light"
+              : ""
+          } text-center`}
+        >
+          Registro
+        </Link>
+        <Link
+          to="/moodmeasurer/moodhistory"
+          className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          } py-2 text-sm font-medium ${
+            selectedSubpage === "moodhistory"
+              ? darkTheme
+                ? "bg-card-dark"
+                : "bg-card-light"
+              : ""
+          } text-center`}
+        >
+          Historico
+        </Link>
+        <Link
+          to="/moodmeasurer/moodoverview"
+          className={`flex cursor-pointer items-center justify-center rounded-md ${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          } px-6 py-2 text-sm font-medium ${
+            selectedSubpage === "moodoverview"
+              ? darkTheme
+                ? "bg-card-dark"
+                : "bg-card-light"
+              : ""
+          } text-center`}
+        >
+          Visão Geral
+        </Link>
+      </div>
+      {selectedSubpage === "moodregisterform" && <MoodRegisterForm />}
+      {selectedSubpage === "moodhistory" && <MoodHistory />}
+      {selectedSubpage === "moodoverview" && <MoodOverview />}
     </section>
   );
 };
