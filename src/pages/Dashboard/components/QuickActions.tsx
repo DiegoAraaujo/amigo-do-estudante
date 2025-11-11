@@ -9,21 +9,19 @@ const QuickActions = () => {
       action: "Iniciar Pomodoro",
       icon: "bi bi-play-circle",
       hoverColor: "#875AF2",
+      path:"/pomodoro"
     },
     {
       action: "Ver Planejamento",
       icon: "bi bi-calendar",
       hoverColor: "#36E275",
+      path:"/planning"
     },
     {
       action: "Registrar Humor",
       icon: "bi bi-emoji-smile",
       hoverColor: "#F08B42",
-    },
-    {
-      action: "Gamificação",
-      icon: "bi bi-controller",
-      hoverColor: "#EAB308",
+      path:"/moodmeasurer"
     },
   ];
 
@@ -54,6 +52,7 @@ const QuickActions = () => {
               action={item.action}
               icon={item.icon}
               hoverColor={item.hoverColor}
+              path={item.path}
             />
           );
         })}
