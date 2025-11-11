@@ -42,8 +42,8 @@ const NavigationMenuDesktop = () => {
             <motion.div
               className={`absolute top-10 z-30 w-[400px] rounded-xl border p-2 shadow-sm ${
                 darkTheme
-                  ? "bg-card-dark border-muted-dark"
-                  : "bg-card-light border-muted-light"
+                  ? "bg-card-dark border-outline-dark"
+                  : "bg-card-light border-outline-light"
               }`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,6 +63,13 @@ const NavigationMenuDesktop = () => {
                   icon="bi bi-calendar"
                   title="Planejamento"
                   description="Organize seus estudos"
+                />
+              </Link>
+              <Link to="/materials">
+                <NavigationItem
+                  icon="bi bi-collection"
+                  title="Materiais de Estudo"
+                  description="Seus materiais pertinho de você"
                 />
               </Link>
             </motion.div>
@@ -93,8 +100,8 @@ const NavigationMenuDesktop = () => {
             <motion.div
               className={`absolute top-10 z-30 w-[400px] rounded-xl border p-2 shadow-lg ${
                 darkTheme
-                  ? "bg-card-dark border-muted-dark"
-                  : "bg-card-light border-muted-light"
+                  ? "bg-card-dark border-outline-dark"
+                  : "bg-card-light border-outline-light"
               }`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
