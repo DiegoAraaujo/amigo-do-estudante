@@ -1,5 +1,5 @@
 import React from "react";
-import type { Factor } from "../../interfaces";
+import type { Factor } from "../interfaces";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 
 interface FactorSelectorProps {
@@ -30,13 +30,19 @@ const FactorSelector = ({
   return (
     <div
       onClick={handleClick}
-      className={`flex cursor-pointer flex-col items-center gap-1 rounded-xl p-6 ${
+      className={`flex cursor-pointer flex-col items-center gap-2 rounded-xl p-6 border ${
         darkTheme
-          ? "bg-card-dark text-muted-dark shadow-purple-500"
-          : "bg-card-light text-muted-light"
-      } ${isSelected ? "border-2 border-[#875AF2] shadow-xs" : ""}`}
+          ? "bg-card-dark text-muted-dark "
+          : "bg-card-light text-muted-light "
+      } ${
+        isSelected
+          ? "border-[#875AF2]"
+          : darkTheme
+          ? "border-outline-dark"
+          : "border-outline-light"
+      }`}
     >
-      <i className={`${factor.icon} text-2xl sm:text-3xl`}></i>
+      <i className={`${factor.icon} text-2xl sm:text-3xl`} />
       <p className="text-sm font-medium">{factor.label}</p>
     </div>
   );
