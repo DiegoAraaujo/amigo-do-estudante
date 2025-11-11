@@ -6,7 +6,7 @@ const ScheduleForm = () => {
     <form
       className={`${
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
-      } p-6 rounded-xl flex flex-col gap-3`}
+      } p-6 rounded-xl flex flex-col gap-4`}
     >
       <div className=" flex flex-col gap-2">
         <label
@@ -20,10 +20,10 @@ const ScheduleForm = () => {
         <input
           type="text"
           id="title"
-          className={`px-6 py-2 rounded-lg ${
+          className={`px-6 py-2 rounded-lg focus:outline-none border ${
             darkTheme
-              ? "placeholder:text-muted-dark bg-dark text-primary-dark"
-              : "placeholder:text-muted-light bg-light text-primary-light"
+              ? "placeholder:text-muted-dark bg-dark text-primary-dark border-outline-dark"
+              : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
           }`}
           placeholder="ex: Consulta Médica"
         />
@@ -40,14 +40,14 @@ const ScheduleForm = () => {
         <textarea
           id="description"
           placeholder="Detalhes sobre o evento..."
-          className={`px-6 py-2 rounded-lg h-20 ${
+          className={`px-6 py-2 rounded-lg h-20 focus:outline-none border ${
             darkTheme
-              ? "placeholder:text-muted-dark bg-dark text-primary-dark"
-              : "placeholder:text-muted-light bg-light text-primary-light"
+              ? "placeholder:text-muted-dark bg-dark text-primary-dark border-outline-dark"
+              : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
           }`}
         />
       </div>
-      <div className=" grid gap-3 sm:grid-cols-3">
+      <div className=" grid gap-4 sm:grid-cols-3">
         <div className=" flex flex-col gap-2">
           <label
             htmlFor="date"
@@ -61,16 +61,16 @@ const ScheduleForm = () => {
             type="date"
             name="date"
             id="date"
-            className={`px-6 py-2 rounded-lg ${
+            className={`px-6 py-2 rounded-lg focus:outline-none border ${
               darkTheme
-                ? "placeholder:text-muted-dark bg-dark text-primary-dark"
-                : "placeholder:text-muted-light bg-light text-primary-light"
+                ? "placeholder:text-muted-dark bg-dark text-primary-dark border-outline-dark"
+                : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
             }`}
           />
         </div>
         <div className=" flex flex-col gap-2">
           <label
-            htmlFor="horario"
+            htmlFor="time"
             className={`${
               darkTheme ? "text-primary-dark" : "text-primary-light"
             } font-medium text-sm`}
@@ -79,10 +79,11 @@ const ScheduleForm = () => {
           </label>
           <input
             type="time"
-            className={`px-6 py-2 rounded-lg ${
+            id="time"
+            className={`px-6 py-2 rounded-lg focus:outline-none border ${
               darkTheme
-                ? "placeholder:text-muted-dark bg-dark text-primary-dark"
-                : "placeholder:text-muted-light bg-light text-primary-light"
+                ? "placeholder:text-muted-dark bg-dark text-primary-dark border-outline-dark"
+                : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
             }`}
           />
         </div>
@@ -98,10 +99,10 @@ const ScheduleForm = () => {
           <select
             name="category"
             id="category"
-            className={`px-6 py-2 rounded-lg ${
+            className={`px-6 py-2 rounded-lg border focus:outline-none ${
               darkTheme
-                ? "placeholder:text-muted-dark bg-dark text-primary-dark"
-                : "placeholder:text-muted-light bg-light text-primary-light"
+                ? "placeholder:text-muted-dark bg-dark text-primary-dark border-outline-dark"
+                : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
             }`}
           >
             <option value="">Pessoal</option>
