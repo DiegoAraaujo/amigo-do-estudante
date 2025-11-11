@@ -22,11 +22,13 @@ const TaskPreviewItem = ({
 
   return (
     <div
-      className={`flex flex-col gap-2 rounded-2xl border border-gray-300 px-5 py-2 ${
-        darkTheme ? "bg-dark" : "bg-light"
+      className={`flex border flex-col gap-2 rounded-2xl  border-gray-300 p-6 ${
+        darkTheme
+          ? "bg-card-dark border-outline-dark"
+          : "border-outline-light bg-card-light"
       }`}
     >
-      <div className="flex gap-3 items-center justify-between">
+      <div className="flex gap-4 items-center justify-between">
         <p
           className={`${
             darkTheme ? "text-primary-dark" : "text-primary-light"

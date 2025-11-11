@@ -16,9 +16,11 @@ const AchievementItem = ({
 
   return (
     <div
-      className={`${
-        darkTheme ? "bg-dark" : "bg-light"
-      } flex items-center justify-between rounded-xl px-5 py-2`}
+      className={`border ${
+        darkTheme
+          ? "bg-card-dark border-outline-dark"
+          : "bg-card-light border-outline-light"
+      } flex items-center justify-between rounded-xl px-6 py-2`}
     >
       <div className="flex items-center gap-3">
         <div

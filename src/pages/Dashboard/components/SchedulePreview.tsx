@@ -31,38 +31,34 @@ const items = [
 const SchedulePreview = () => {
   const { darkTheme } = useDarkTheme();
   return (
-    <section>
-      <div
-        className={`${
-          darkTheme ? "bg-surface-dark" : "bg-surface-light"
-        } flex flex-col gap-6 rounded-2xl p-6`}
-      >
-        <div className="flex flex-col justify-between sm:flex-row">
-          <div className="flex items-center justify-start gap-4">
-            <i className="bi bi-calendar text-xl text-purple-700" />
-            <h1
-              className={`text-2xl font-semibold ${
-                darkTheme ? "text-primary-dark" : "text-primary-light"
-              }`}
-            >
-              Cronograma de Hoje
-            </h1>
-          </div>
-        </div>
+    <section
+      className={`${
+        darkTheme ? "bg-surface-dark" : "bg-surface-light"
+      } flex flex-col gap-6 rounded-xl p-6`}
+    >
+      <div className="flex items-center justify-start gap-4">
+        <i className="bi bi-calendar text-xl text-purple-700" />
+        <h1
+          className={`text-2xl font-semibold ${
+            darkTheme ? "text-primary-dark" : "text-primary-light"
+          }`}
+        >
+          Cronograma de Hoje
+        </h1>
+      </div>
 
-        <div className="flex flex-col gap-4">
-          {items.map((item, index) => {
-            return (
-              <SchedulePreviewItem
-                key={index}
-                hour={item.hour}
-                matter={item.matter}
-                description={item.description}
-                status={item.status}
-              />
-            );
-          })}
-        </div>
+      <div className="grid md:grid-cols-2 gap-4">
+        {items.map((item, index) => {
+          return (
+            <SchedulePreviewItem
+              key={index}
+              hour={item.hour}
+              matter={item.matter}
+              description={item.description}
+              status={item.status}
+            />
+          );
+        })}
       </div>
     </section>
   );

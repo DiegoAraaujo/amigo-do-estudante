@@ -6,9 +6,9 @@ const CommunityPreview = () => {
   return (
     <section>
       <div
-        className={`flex flex-col gap-5 rounded-2xl ${
+        className={`flex flex-col rounded-xl ${
           darkTheme ? "bg-surface-dark" : "bg-surface-light"
-        } p-6`}
+        } p-6 gap-6`}
       >
         <div className="flex items-center justify-start gap-4">
           <i className="bi bi-people-fill text-xl text-purple-700" />
@@ -20,13 +20,14 @@ const CommunityPreview = () => {
             Destaques da Comunidade
           </h1>
         </div>
-        <div className="flex flex-col gap-4">
+
+        <div className="grid md:grid-cols-2 gap-4">
           <CommunityPreviewItem />
           <CommunityPreviewItem />
-          <button className="w-full cursor-pointer rounded-2xl border border-gray-300 bg-[#F9F9FA] py-2 text-center text-sm font-medium hover:bg-[#5AA6F2] hover:text-white">
-            <i className="bi bi-people-fill"></i> Participar da comunidade
-          </button>
         </div>
+        <button className="w-full cursor-pointer rounded-2xl border border-gray-300 bg-[#F9F9FA] py-2 text-center text-sm font-medium hover:bg-[#5AA6F2] hover:text-white">
+          <i className="bi bi-people-fill"></i> Participar da comunidade
+        </button>
       </div>
     </section>
   );

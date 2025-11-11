@@ -4,11 +4,13 @@ const CommunityPreviewItem = () => {
   const { darkTheme } = useDarkTheme();
   return (
     <div
-      className={`flex flex-col gap-2 rounded-2xl px-5 py-2 ${
-        darkTheme ? "bg-dark" : "bg-light"
+      className={`flex flex-col gap-4 rounded-xl p-6 border ${
+        darkTheme
+          ? "bg-card-dark border-outline-dark"
+          : "bg-card-light border-outline-light"
       }`}
     >
-      <div className="flex justify-between gap-2">
+      <div className="flex justify-between gap-4">
         <p
           className={`${
             darkTheme ? "text-primary-dark" : "text-primary-light"
@@ -27,13 +29,19 @@ const CommunityPreviewItem = () => {
         </div>
       </div>
       <div
-        className={`flex gap-5 text-xs ${
+        className={`flex gap-4 text-xs ${
           darkTheme ? "text-muted-dark" : "text-muted-light"
         }`}
       >
-        <p>12 respostas</p>
-        <p>31 curtidas</p>
-        <p>4h atrás</p>
+        <p className={`${darkTheme ? "text-muted-dark" : "text-muted-light"}`}>
+          12 respostas
+        </p>
+        <p className={`${darkTheme ? "text-muted-dark" : "text-muted-light"}`}>
+          31 curtidas
+        </p>
+        <p className={`${darkTheme ? "text-muted-dark" : "text-muted-light"}`}>
+          4h atrás
+        </p>
       </div>
     </div>
   );

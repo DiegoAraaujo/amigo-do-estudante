@@ -16,8 +16,10 @@ const SchedulePreviewItem = ({
   const { darkTheme } = useDarkTheme();
   return (
     <div
-      className={`flex items-center gap-10 rounded-2xl px-5 py-2  ${
-        darkTheme ? "bg-dark" : "bg-light"
+      className={`flex items-center gap-10 rounded-xl p-6 border ${
+        darkTheme
+          ? "bg-card-dark border-outline-dark"
+          : "bg-card-light border-outline-light"
       }`}
     >
       <p className="text-sm font-medium text-green-500">{hour}</p>
