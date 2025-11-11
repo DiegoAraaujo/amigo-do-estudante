@@ -10,13 +10,13 @@ import Pomodoro from "./pages/Pomodoro";
 import Community from "./pages/Community";
 import Profile from "./pages/Profile";
 import Planning from "./pages/Planning";
+import Materials from "./pages/Materials";
 
 const App = () => {
   return (
     <DarkContextProvider>
-      <Container>
-        <BrowserRouter>
-          <Header />
+      <BrowserRouter>
+        <Container>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route
@@ -28,13 +28,14 @@ const App = () => {
               }
             />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/materials" element={<Materials />} />
             <Route path="/community/:subpage?" element={<Community />} />
             <Route path="/:period/:subpage" element={<Dashboard />} />
             <Route path="/moodmeasurer/:subpage?" element={<MoodMeasurer />} />
             <Route path="/planning/:subpage?" element={<Planning />} />
           </Routes>
-        </BrowserRouter>
-      </Container>
+        </Container>
+      </BrowserRouter>
     </DarkContextProvider>
   );
 };
