@@ -4,7 +4,7 @@ const CommunityPreviewItem = () => {
   const { darkTheme } = useDarkTheme();
   return (
     <div
-      className={`flex flex-col gap-4 rounded-xl p-6 border ${
+      className={`flex flex-col gap-4 rounded-xl p-4 border ${
         darkTheme
           ? "bg-card-dark border-outline-dark"
           : "bg-card-light border-outline-light"

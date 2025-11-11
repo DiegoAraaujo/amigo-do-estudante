@@ -20,14 +20,10 @@ const AchievementItem = ({
         darkTheme
           ? "bg-card-dark border-outline-dark"
           : "bg-card-light border-outline-light"
-      } flex items-center justify-between rounded-xl px-6 py-2`}
+      } flex items-center justify-between rounded-xl px-4 py-2`}
     >
       <div className="flex items-center gap-3">
-        <div
-          className={`rounded-full ${
-            darkTheme ? "bg-card-dark" : "bg-card-light"
-          }  px-3 py-2`}
-        >
+        <div className={` ${darkTheme ? "bg-card-dark" : "bg-card-light"}`}>
           <i className={`${icon} text-[16px] text-blue-900`} />
         </div>
         <div>
@@ -41,7 +37,7 @@ const AchievementItem = ({
           <p
             className={`text-xs ${
               darkTheme ? "text-muted-dark" : "text-muted-light"
-            }`}
+            }  whitespace-normal break-words`}
           >
             {description}
           </p>
@@ -54,7 +50,7 @@ const AchievementItem = ({
             : " bg-card-light text-muted-light"
         }`}
       >
-        <p className="px-2 py-1 text-xs font-medium">+{xp} XP</p>
+        <p className="text-xs font-medium">+{xp} XP</p>
       </div>
     </div>
   );

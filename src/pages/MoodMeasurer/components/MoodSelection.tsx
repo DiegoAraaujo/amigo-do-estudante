@@ -18,7 +18,7 @@ const MoodSelection = ({
   return (
     <div className="mb-6 flex flex-col gap-3">
       <h2
-        className={`text-sm font-medium ${
+        className={`text-base font-medium ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >

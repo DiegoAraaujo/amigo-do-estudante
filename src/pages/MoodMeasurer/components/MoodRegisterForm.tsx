@@ -22,20 +22,13 @@ const MoodRegisterForm = () => {
       } rounded-xl`}
     >
       <div className="mb-3">
-        <h1
-          className={`text-lg font-semibold sm:text-2xl ${
+        <h2
+          className={`text-xl font-semibold ${
             darkTheme ? "text-primary-dark" : "text-primary-light"
           }`}
         >
-          Como você está se sentindo hoje?
-        </h1>
-        <p
-          className={`${
-            darkTheme ? "text-muted-dark" : "text-muted-light"
-          } text-sm`}
-        >
-          Registre seu humor e fatores que influenciam seu bem-estar
-        </p>
+          Como se sente hoje?
+        </h2>
       </div>
 
       <MoodSelection

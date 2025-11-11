@@ -7,7 +7,7 @@ const DailyHistory = () => {
       className={`${darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"} rounded-xl p-6`}
     >
       <p
-        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-xl font-bold sm:text-2xl`}
+        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-xl font-semibold`}
       >
         Histórico de Hoje
       </p>

@@ -12,7 +12,7 @@ const SummaryPanel = () => {
       <p
         className={`${
           darkTheme ? "text-primary-dark" : "text-primary-light"
-        } text-xl sm:text-2xl font-semibold`}
+        } text-xl font-semibold`}
       >
         Resumo
       </p>

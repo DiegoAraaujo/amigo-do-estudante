@@ -13,7 +13,7 @@ const QuickActions = ({ selectedSubpage }: QuickActionsProps) => {
       } rounded-xl p-6 sm:flex-1 lg:flex-none `}
     >
       <h2
-        className={`text-xl font-semibold md:text-2xl ${
+        className={`text-xl font-semibold ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         } mb-6`}
       >

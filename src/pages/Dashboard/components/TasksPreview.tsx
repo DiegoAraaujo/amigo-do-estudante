@@ -50,13 +50,13 @@ const TasksPreview = () => {
               className={`text-purple-700
                bi bi-list-task text-xl`}
             />
-            <h1
-              className={`text-2xl font-semibold ${
+            <h2
+              className={`text-xl font-semibold ${
                 darkTheme ? "text-primary-dark" : "text-primary-light"
               }`}
             >
               Próximas Tarefas
-            </h1>
+            </h2>
           </div>
         </div>
 

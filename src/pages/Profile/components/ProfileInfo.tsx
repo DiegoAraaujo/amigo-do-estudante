@@ -9,7 +9,7 @@ const ProfileInfo = () => {
       }`}
     >
       <p
-        className={`text-2xl font-bold ${
+        className={`text-xl font-bold ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >

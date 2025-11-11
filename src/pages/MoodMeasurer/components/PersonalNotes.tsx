@@ -13,7 +13,7 @@ const PersonalNotes = ({
   return (
     <div className="mb-6">
       <h2
-        className={`text-sm mb-3 font-medium ${
+        className={`text-base mb-3 font-medium ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >

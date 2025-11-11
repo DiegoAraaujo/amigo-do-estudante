@@ -12,13 +12,13 @@ const CommunityPreview = () => {
       >
         <div className="flex items-center justify-start gap-4">
           <i className="bi bi-people-fill text-xl text-purple-700" />
-          <h1
+          <h2
             className={`${
               darkTheme ? "text-primary-dark" : "text-primary-light"
-            } text-2xl font-semibold`}
+            } text-xl font-semibold`}
           >
             Destaques da Comunidade
-          </h1>
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-4">

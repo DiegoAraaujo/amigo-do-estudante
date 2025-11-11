@@ -14,7 +14,7 @@ const PlanningNav = ({ selectedSubPage }: PlanningNavProps) => {
     >
       <Link
         to="/planning/myschedule"
-        className={` rounded-xl px-6 py-2 flex justify-center font-medium ${
+        className={` rounded-xl px-4 py-2 flex justify-center font-medium ${
           selectedSubPage === "myschedule"
             ? "bg-purple-700 text-primary-dark"
             : darkTheme
@@ -26,7 +26,7 @@ const PlanningNav = ({ selectedSubPage }: PlanningNavProps) => {
       </Link>
       <Link
         to="/planning/mytasks"
-        className={` rounded-xl px-6 py-2 flex justify-center font-medium ${
+        className={` rounded-xl px-4 py-2 flex justify-center font-medium ${
           selectedSubPage === "mytasks"
             ? "bg-purple-700 text-primary-dark"
             : darkTheme

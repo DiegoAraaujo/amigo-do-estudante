@@ -38,7 +38,7 @@ const QuickActions = () => {
       <div className="flex items-center gap-4">
         <i className="bi bi-lightning-charge text-xl text-[#875AF2]"></i>
         <p
-          className={`text-2xl font-semibold ${
+          className={`text-xl font-semibold ${
             darkTheme ? "text-primary-dark" : "text-primary-light"
           }`}
         >

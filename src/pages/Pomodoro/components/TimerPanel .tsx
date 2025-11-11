@@ -64,7 +64,7 @@ const TimerPanel = () => {
       <p
         className={`${
           darkTheme ? "text-primary-dark" : "text-primary-light"
-        } text-center text-xl font-bold sm:text-2xl`}
+        } text-center text-xl font-semibold`}
       >
         Tempo de Foco
       </p>

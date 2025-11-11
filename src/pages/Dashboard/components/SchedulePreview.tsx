@@ -38,13 +38,13 @@ const SchedulePreview = () => {
     >
       <div className="flex items-center justify-start gap-4">
         <i className="bi bi-calendar text-xl text-purple-700" />
-        <h1
-          className={`text-2xl font-semibold ${
+        <h2
+          className={`text-xl font-semibold ${
             darkTheme ? "text-primary-dark" : "text-primary-light"
           }`}
         >
           Cronograma de Hoje
-        </h1>
+        </h2>
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">

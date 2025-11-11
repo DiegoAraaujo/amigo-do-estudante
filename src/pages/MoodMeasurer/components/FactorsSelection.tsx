@@ -17,11 +17,11 @@ const FactorsSelection = ({
   return (
     <div className="mb-6 flex flex-col gap-3">
       <h2
-        className={` text-sm font-medium ${
+        className={` text-base font-medium ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >
-        Fatores que influenciaram seu humor (opcional)
+        Influências do humor (opcional)
       </h2>
       <div className="grid grid-cols-2 gap-5 md:grid-cols-3">
         {factors.map((factor) => (

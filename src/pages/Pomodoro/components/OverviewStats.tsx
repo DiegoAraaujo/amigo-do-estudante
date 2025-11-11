@@ -9,20 +9,20 @@ const OverviewStats = () => {
         darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"
       } rounded-xl p-6`}
     >
-      <p
+      <h2
         className={`${
           darkTheme ? "text-primary-dark" : "text-primary-light"
-        } mb-6 text-xl font-bold sm:text-2xl`}
+        } mb-6 text-xl font-semibold `}
       >
         Visão Geral
-      </p>
-      <div className={`grid grid-cols-2 gap-6`}>
+      </h2>
+      <div className={`grid grid-cols-2 gap-4`}>
         <div
           className={`border ${
             darkTheme
               ? "bg-card-dark border-outline-dark"
               : "bg-card-light border-outline-light"
-          } flex flex-col items-center rounded-xl p-6`}
+          } flex flex-col items-center rounded-xl p-4`}
         >
           <p className="text-2xl font-bold text-blue-500">0</p>
           <p
@@ -38,7 +38,7 @@ const OverviewStats = () => {
             darkTheme
               ? "bg-card-dark border-outline-dark"
               : "bg-card-light border-outline-light"
-          } flex flex-col items-center rounded-xl p-6`}
+          } flex flex-col items-center rounded-xl p-4`}
         >
           <p className="text-2xl font-bold text-purple-500">23</p>
           <p
@@ -54,7 +54,7 @@ const OverviewStats = () => {
             darkTheme
               ? "bg-card-dark border-outline-dark"
               : "bg-card-light border-outline-light"
-          } flex flex-col items-center rounded-xl p-6`}
+          } flex flex-col items-center rounded-xl p-4`}
         >
           <p className="text-2xl font-bold text-green-500">89</p>
           <p
@@ -70,7 +70,7 @@ const OverviewStats = () => {
             darkTheme
               ? "bg-card-dark border-outline-dark"
               : "bg-card-light border-outline-light"
-          } flex flex-col items-center rounded-xl p-6`}
+          } flex flex-col items-center rounded-xl p-4`}
         >
           <p className="text-2xl font-bold text-orange-500">5</p>
           <p

@@ -14,7 +14,7 @@ const EnergyLevelSelector = ({
   return (
     <div className="mb-6 flex flex-col gap-3">
       <h2
-        className={` text-sm font-medium ${darkTheme ? "text-primary-dark" : "text-primary-light"}`}
+        className={` text-base font-medium ${darkTheme ? "text-primary-dark" : "text-primary-light"}`}
       >
         Nivel de Energia {energyLevel}/10
       </h2>

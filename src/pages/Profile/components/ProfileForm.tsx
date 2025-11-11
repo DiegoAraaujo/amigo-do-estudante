@@ -28,7 +28,7 @@ const ProfileForm = () => {
       } p-6 flex flex-col gap-3 rounded-xl`}
     >
       <h2
-        className={`font-semibold text-xl md:text-2xl ${
+        className={`font-semibold text-xl ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >

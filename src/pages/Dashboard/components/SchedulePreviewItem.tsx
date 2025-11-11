@@ -16,7 +16,7 @@ const SchedulePreviewItem = ({
   const { darkTheme } = useDarkTheme();
   return (
     <div
-      className={`flex items-center gap-10 rounded-xl p-6 border ${
+      className={`flex items-center gap-10 rounded-xl p-4 border ${
         darkTheme
           ? "bg-card-dark border-outline-dark"
           : "bg-card-light border-outline-light"

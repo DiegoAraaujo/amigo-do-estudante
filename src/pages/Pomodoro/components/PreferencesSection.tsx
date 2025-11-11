@@ -28,7 +28,7 @@ const PreferencesSection = () => {
         <h2
           className={`${
             darkTheme ? "text-primary-dark" : "text-primary-light"
-          } text-xl font-bold sm:text-2xl`}
+          } text-xl font-semibold`}
         >
           Metas e Preferências
         </h2>

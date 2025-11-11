@@ -22,7 +22,7 @@ const TimerSettingsSection = () => {
         <h2
           className={`${
             darkTheme ? "text-primary-dark" : "text-primary-light"
-          } text-xl font-bold sm:text-2xl`}
+          } text-xl font-semibold`}
         >
           Tempos das Sessões
         </h2>

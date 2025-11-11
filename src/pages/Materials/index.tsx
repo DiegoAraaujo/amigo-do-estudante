@@ -9,7 +9,7 @@ const Materials = () => {
     useState<boolean>(false);
 
   return (
-    <main>
+    <section>
       {isAddMaterialModalOpen && (
         <AddMaterialModal
           setIsAddMaterialModalOpen={setIsAddMaterialModalOpen}
@@ -23,15 +23,15 @@ const Materials = () => {
           Adicionar Material
         </button>
       </div>
-      <section
+      <div
         className={`gap-4 grid lg:grid-cols-2 p-6 rounded-xl ${
           darkTheme ? "bg-surface-dark" : "bg-surface-light rounded-xl"
         }`}
       >
         <MaterialCard />
         <MaterialCard />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 

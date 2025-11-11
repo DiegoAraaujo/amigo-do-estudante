@@ -22,7 +22,7 @@ const TaskPreviewItem = ({
 
   return (
     <div
-      className={`flex border flex-col gap-2 rounded-2xl  border-gray-300 p-6 ${
+      className={`flex border flex-col gap-2 rounded-2xl  border-gray-300 p-4 ${
         darkTheme
           ? "bg-card-dark border-outline-dark"
           : "border-outline-light bg-card-light"

@@ -15,7 +15,7 @@ const ProgressCard = ({ title, total, completed, icon }: ProgressCardProps) => {
     <div
       className={`${
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
-      } flex w-full rounded-2xl px-5 py-8 transition-shadow duration-500 hover:shadow-md`}
+      } flex w-full rounded-2xl p-6 transition-shadow duration-500 hover:shadow-md`}
     >
       <div className="flex flex-col gap-3">
         <p

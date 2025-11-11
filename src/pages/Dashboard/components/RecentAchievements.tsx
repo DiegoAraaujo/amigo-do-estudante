@@ -30,24 +30,15 @@ const RecentAchievements = () => {
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
       } p-6`}
     >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <i className="bi bi-award text-xl text-yellow-600"></i>
-          <p
-            className={`text-2xl font-semibold ${
-              darkTheme ? "text-primary-dark" : "text-primary-light"
-            }`}
-          >
-            Conquistas Recentes
-          </p>
-        </div>
-        <button
-          className={`${
-            darkTheme ? "text-muted-dark" : "text-muted-light"
-          } text-sm font-medium cursor-pointer`}
+      <div className="flex items-center gap-4">
+        <i className="bi bi-award text-xl text-yellow-600"></i>
+        <h2
+          className={`text-xl font-semibold ${
+            darkTheme ? "text-primary-dark" : "text-primary-light"
+          }`}
         >
-          Ver todas
-        </button>
+          Conquistas Recentes
+        </h2>
       </div>
 
       <div className="flex flex-col gap-4">

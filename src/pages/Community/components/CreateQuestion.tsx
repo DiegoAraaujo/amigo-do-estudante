@@ -41,12 +41,10 @@ const CreateQuestion = () => {
     >
       <h2
         className={`${
-          darkTheme
-            ? "text-primary-dark text-xl md:text-2xl"
-            : "text-primary-light"
-        } font-semibold`}
+          darkTheme ? "text-primary-dark" : "text-primary-light"
+        } font-semibold text-xl`}
       >
-        Fazer Pergunta
+        Faça sua Pergunta
       </h2>
 
       <input

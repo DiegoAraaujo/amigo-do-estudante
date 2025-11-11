@@ -17,7 +17,7 @@ const QuickActionItem = ({
 
   return (
     <div
-      className={`flex cursor-pointer justify-between rounded-xl   py-2 px-6 transition-colors border group ${
+      className={`flex cursor-pointer justify-between rounded-xl   py-2 px-4 transition-colors border group ${
         darkTheme
           ? "bg-card-dark  border-outline-dark"
           : "bg-card-light border-outline-light"
@@ -31,7 +31,7 @@ const QuickActionItem = ({
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >
-        <i className={`${icon} text-[16px] group-hover:text-primary-dark`} />
+        <i className={`${icon} text-base group-hover:text-primary-dark`} />
         <p className="text-[16px] font-medium group-hover:text-primary-dark">
           {action}
         </p>

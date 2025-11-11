@@ -8,7 +8,7 @@ const ProductivityStats = () => {
       className={`${darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"} rounded-xl p-6`}
     >
       <p
-        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} mb-6 text-xl font-bold sm:text-2xl`}
+        className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} mb-6 text-xl font-semibold`}
       >
         Produtividade
       </p>
@@ -20,7 +20,7 @@ const ProductivityStats = () => {
             Horas Totais
           </p>
           <p
-            className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-lg font-bold`}
+            className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-base font-bold`}
           >
             45.5h
           </p>
@@ -32,7 +32,7 @@ const ProductivityStats = () => {
             Média Diária
           </p>
           <p
-            className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-lg font-bold`}
+            className={`${darkTheme ? "text-primary-dark" : "text-primary-light"} text-base font-bold`}
           >
             4.2
           </p>
@@ -45,7 +45,7 @@ const ProductivityStats = () => {
           >
             Taxa de Conclusão
           </p>
-          <p className={`text-lg font-bold text-green-500`}>94%</p>
+          <p className={`text-base font-bold text-green-500`}>94%</p>
         </div>
       </div>
     </div>

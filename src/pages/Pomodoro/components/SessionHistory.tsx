@@ -23,13 +23,13 @@ const SessionHistory = () => {
       <p
         className={`${
           darkTheme ? "text-primary-dark" : "text-primary-light"
-        } sm:text-2xl font-semibold text-xl`}
+        } font-semibold text-xl`}
       >
         Últimas Sessões
       </p>
-      <div className="flex items-center justify-start py-6">
+      <div className="flex items-center justify-center py-6">
         {sessions.length > 0 ? (
-          <div className="flex flex-col gap-6 sm:flex-row lg:flex-col">
+          <div className="flex flex-col gap-4 sm:flex-row lg:flex-col">
             {sessions.map((session, index) => {
               return (
                 <SessionCard

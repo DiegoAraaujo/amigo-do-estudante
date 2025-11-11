@@ -12,7 +12,7 @@ const Container = ({ children }: ContainerProps) => {
   return (
     <div className={`${darkTheme ? "bg-dark" : "bg-light"} min-h-dvh `}>
       <Header />
-      <div className="max-w-7xl w-full md:p-8 m-auto p-6">{children}</div>
+      <main className="max-w-7xl w-full md:p-8 m-auto p-6">{children}</main>
     </div>
   );
 };

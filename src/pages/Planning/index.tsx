@@ -10,9 +10,9 @@ const Planning = () => {
   const selectedSubPage = subpage || "myschedule";
 
   return (
-    <main>
+    <section>
       <div className="md:grid-cols-3 grid gap-6 mb-6">
-        <div className="flex gap-2 items-center bg-blue-600/10 rounded-xl p-6">
+        <div className="flex gap-4 items-center bg-blue-600/10 rounded-xl p-6">
           <div className="rounded-xl bg-blue-600/20 text-blue-800 px-2 py-1">
             <i className="bi bi-ui-checks-grid text-2xl" />
           </div>
@@ -27,9 +27,9 @@ const Planning = () => {
             </p>
           </div>
         </div>
-        <div className="flex gap-2 items-center bg-purple-600/10 rounded-xl p-6">
+        <div className="flex gap-4 items-center bg-purple-600/10 rounded-xl p-6">
           <div className="rounded-xl bg-purple-600/20 text-purple-800 px-2 py-1">
-            <i className="bi bi-ui-checks-grid text-2xl" />
+            <i className="bi bi-calendar-event text-2xl" />
           </div>
           <div>
             <p className="text-3xl font-bold text-purple-700">0</p>
@@ -38,13 +38,13 @@ const Planning = () => {
                 darkTheme ? "text-muted-dark" : "text-muted-light"
               } text-sm`}
             >
-              Tarefas Ativas
+              Eventos
             </p>
           </div>
         </div>
-        <div className="flex gap-2 items-center bg-green-600/10 rounded-xl p-6">
+        <div className="flex gap-4 items-center bg-green-600/10 rounded-xl p-6">
           <div className="rounded-xl bg-green-600/20 text-green-800 px-2 py-1">
-            <i className="bi bi-ui-checks-grid text-2xl" />
+            <i className="bi bi-graph-up text-2xl" />
           </div>
           <div>
             <p className="text-3xl font-bold text-green-700">0</p>
@@ -53,7 +53,7 @@ const Planning = () => {
                 darkTheme ? "text-muted-dark" : "text-muted-light"
               } text-sm`}
             >
-              Tarefas Ativas
+              Taxa de Conclusão
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Planning = () => {
       <PlanningNav selectedSubPage={selectedSubPage} />
       {selectedSubPage === "myschedule" && <MyScheduleSection />}
       {selectedSubPage === "mytasks" && <MyTasksSection />}
-    </main>
+    </section>
   );
 };
 

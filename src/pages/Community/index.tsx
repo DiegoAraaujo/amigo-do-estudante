@@ -10,7 +10,7 @@ const Community = () => {
   const { subpage } = useParams();
   const selectedSubpage = subpage || "allquestions";
   return (
-    <div className="lg:grid lg:grid-cols-[400px_auto] gap-6 flex flex-col">
+    <section className="lg:grid lg:grid-cols-[400px_auto] gap-6 flex flex-col">
       <div className="flex flex-col gap-6 sm:flex-row lg:flex-col">
         <TopUsers />
         <QuickActions selectedSubpage={selectedSubpage} />
@@ -21,7 +21,7 @@ const Community = () => {
         {selectedSubpage === "myquestions" && <MyQuestions />}
         {selectedSubpage === "myanswers" && <MyAnswers />}
       </div>
-    </div>
+    </section>
   );
 };
 
