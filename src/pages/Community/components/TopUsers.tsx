@@ -10,7 +10,7 @@ const TopUsers = () => {
       } rounded-xl p-6 sm:flex-1 lg:flex-none`}
     >
       <h2
-        className={`text-xl font-semibold sm:text-2xl md:text-2xl ${
+        className={`text-xl font-semibold md:text-2xl ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         } mb-6`}
       >

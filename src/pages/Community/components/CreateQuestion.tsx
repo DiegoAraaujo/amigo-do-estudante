@@ -54,17 +54,17 @@ const CreateQuestion = () => {
         placeholder="Título da Pergunta"
         className={`${
           darkTheme
-            ? "placeholder:text-muted-dark text-primary-dark bg-dark"
-            : "placeholder:text-muted-light bg-light text-primary-light"
-        } rounded-lg px-4 py-2 outline-none`}
+            ? "placeholder:text-muted-dark text-primary-dark bg-dark border-outline-dark"
+            : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
+        } rounded-lg px-4 py-2 outline-none border`}
       />
 
       <select
         className={`${
           darkTheme
-            ? "placeholder:text-muted-dark text-primary-dark bg-dark"
-            : "placeholder:text-muted-light bg-light text-primary-light"
-        } rounded-lg px-4 py-2 outline-none`}
+            ? "placeholder:text-muted-dark text-primary-dark bg-dark border-outline-dark"
+            : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
+        } rounded-lg px-4 py-2 outline-none border`}
       >
         <option value="matematica">Matemática</option>
         <option value="fisica">Física</option>
@@ -78,9 +78,9 @@ const CreateQuestion = () => {
         placeholder="Descreva sua pergunta em detalhes"
         className={`${
           darkTheme
-            ? "placeholder:text-muted-dark text-primary-dark bg-dark"
-            : "placeholder:text-muted-light bg-light text-primary-light"
-        } h-32 rounded-lg px-4 py-2 outline-none`}
+            ? "placeholder:text-muted-dark text-primary-dark bg-dark border-outline-dark"
+            : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
+        } h-32 rounded-lg px-4 py-2 outline-none border`}
       ></textarea>
 
       <input
@@ -88,9 +88,9 @@ const CreateQuestion = () => {
         placeholder="Tags (separadas por vírgula)"
         className={`${
           darkTheme
-            ? "placeholder:text-muted-dark text-primary-dark bg-dark"
-            : "placeholder:text-muted-light bg-light text-primary-light"
-        } rounded-lg px-4 py-2 outline-none`}
+            ? "placeholder:text-muted-dark text-primary-dark bg-dark border-outline-dark"
+            : "placeholder:text-muted-light bg-light text-primary-light border-outline-light"
+        } rounded-lg px-4 py-2 outline-none border`}
       />
 
       <input
@@ -124,14 +124,7 @@ const CreateQuestion = () => {
         </div>
       )}
 
-      <div className="flex gap-3 mt-4 flex-wrap">
-        <button
-          type="submit"
-          className="text-primary-dark flex w-full max-w-40 cursor-pointer items-center justify-center gap-2 rounded-xl border-l-blue-500 bg-blue-600 px-5 py-2 text-sm font-medium"
-        >
-          Publicar Pergunta
-        </button>
-
+      <div className="flex gap-4  flex-col sm:flex-row">
         <button
           type="button"
           onClick={handleSelectImage}
@@ -146,16 +139,24 @@ const CreateQuestion = () => {
           {images.length >= 4 ? "Limite atingido" : "Adicionar Imagem"}
         </button>
 
-        <button
-          type="button"
-          className={`${
-            darkTheme
-              ? "bg-dark text-primary-dark"
-              : "bg-card-light text-primary-light"
-          } flex w-full max-w-32 cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-2 text-sm font-medium`}
-        >
-          Cancelar
-        </button>
+        <div className="flex gap-4 w-full justify-start">
+          <button
+            type="submit"
+            className="text-primary-dark flex w-full max-w-40 cursor-pointer items-center justify-center gap-2 rounded-xl border-l-blue-500 bg-blue-600 px-5 py-2 text-sm font-medium"
+          >
+            Publicar Pergunta
+          </button>
+          <button
+            type="button"
+            className={`${
+              darkTheme
+                ? "bg-dark text-primary-dark"
+                : "bg-card-light text-primary-light"
+            } flex w-full max-w-32 cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-2 text-sm font-medium`}
+          >
+            Cancelar
+          </button>
+        </div>
       </div>
     </form>
   );
