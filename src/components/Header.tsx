@@ -4,6 +4,7 @@ import NavigationMenuDesktop from "./NavigationMenuDesktop";
 import NavigationMenuMobile from "./NavigationMenuMobile";
 import { useDarkTheme } from "../hooks/UseDarkTheme";
 import UserDropdown from "./UserDropdown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { darkTheme } = useDarkTheme();
@@ -12,7 +13,7 @@ const Header = () => {
 
   return (
     <header
-      className={`relative mb-6 ${
+      className={`relative ${
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
       } px-6 sticky top-0 z-40`}
     >
@@ -33,9 +34,12 @@ const Header = () => {
             onClick={() => setMenuVisible(!menuVisible)}
           />
 
-          <div className="cursor-pointer rounded-xl bg-gradient-to-bl from-[#A27FF4] to-[#B59AF6] px-2 py-1">
+          <Link
+            to="/"
+            className="cursor-pointer rounded-xl bg-gradient-to-bl from-[#A27FF4] to-[#B59AF6] px-2 py-1"
+          >
             <i className={`bi bi-mortarboard text-primary-dark text-2xl`} />
-          </div>
+          </Link>
 
           <h1
             className={`hidden text-lg font-bold md:block ${
