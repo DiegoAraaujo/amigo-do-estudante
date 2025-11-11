@@ -11,7 +11,7 @@ const Planning = () => {
 
   return (
     <section>
-      <div className="md:grid-cols-3 grid gap-6 mb-6">
+      <div className=" grid gap-6 mb-6 sm:grid-cols-3">
         <div className="flex gap-4 items-center bg-blue-600/10 rounded-xl p-6">
           <div className="rounded-xl bg-blue-600/20 text-blue-800 px-2 py-1">
             <i className="bi bi-ui-checks-grid text-2xl" />
@@ -47,7 +47,7 @@ const Planning = () => {
             <i className="bi bi-graph-up text-2xl" />
           </div>
           <div>
-            <p className="text-3xl font-bold text-green-700">0</p>
+            <p className="text-3xl font-bold text-green-700">0%</p>
             <p
               className={`${
                 darkTheme ? "text-muted-dark" : "text-muted-light"
