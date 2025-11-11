@@ -11,7 +11,7 @@ const UserDropdown = ({ setDropDownVisible }: UserDropdownProps) => {
   return (
     <div
       className={`border z-50 ${
-        darkTheme ? "bg-dark border-gray-500" : "bg-light border-gray-300"
+        darkTheme ? "bg-dark border-gray-600" : "bg-light border-gray-300"
       } flex flex-col rounded-xl p-3 w-60 absolute right-0 gap-2`}
     >
       <div
