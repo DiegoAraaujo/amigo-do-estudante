@@ -15,9 +15,9 @@ const FactorsSelection = ({
   const { darkTheme } = useDarkTheme();
 
   return (
-    <div className="mb-6 flex flex-col">
+    <div className="mb-6 flex flex-col gap-3">
       <h2
-        className={`mb-3 text-sm font-medium ${
+        className={` text-sm font-medium ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >
