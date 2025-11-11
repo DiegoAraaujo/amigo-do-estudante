@@ -9,8 +9,11 @@
   --color-primary-light: #1f2937;
   --color-surface-dark: #171a21;
   --color-surface-light: #ffffff;
-  --color-card-dark: #191e27;
-  --color-card-light: #f9f9fa;
+  --color-card-dark: #1f2530;
+  --color-card-light: #f3f4f6;
+  --color-outline-light: #d1d5dc;
+  --color-outline-dark: #3a4250;
+  --color-outline-light: #d1d5dc;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
