@@ -16,51 +16,49 @@ const MoodRegisterForm = () => {
   const [personalNotes, setPersonalNotes] = useState("");
 
   return (
-    <section>
-      <div
-        className={`w-full p-6 ${
-          darkTheme ? "bg-surface-dark" : "bg-surface-light"
-        } rounded-xl`}
-      >
-        <div className="mb-3">
-          <h1
-            className={`text-lg font-semibold sm:text-2xl ${
-              darkTheme ? "text-primary-dark" : "text-primary-light"
-            }`}
-          >
-            Como você está se sentindo hoje?
-          </h1>
-          <p
-            className={`${
-              darkTheme ? "text-muted-dark" : "text-muted-light"
-            } text-sm`}
-          >
-            Registre seu humor e fatores que influenciam seu bem-estar
-          </p>
-        </div>
+    <section
+      className={`w-full p-6 ${
+        darkTheme ? "bg-surface-dark" : "bg-surface-light"
+      } rounded-xl`}
+    >
+      <div className="mb-3">
+        <h1
+          className={`text-lg font-semibold sm:text-2xl ${
+            darkTheme ? "text-primary-dark" : "text-primary-light"
+          }`}
+        >
+          Como você está se sentindo hoje?
+        </h1>
+        <p
+          className={`${
+            darkTheme ? "text-muted-dark" : "text-muted-light"
+          } text-sm`}
+        >
+          Registre seu humor e fatores que influenciam seu bem-estar
+        </p>
+      </div>
 
-        <MoodSelection
-          selectedMood={selectedMood}
-          setSelectedMood={setSelectedMood}
-        />
-        <EnergyLevelSelector
-          energyLevel={energyLevel}
-          setEnergyLevel={setEnergyLevel}
-        />
-        <FactorsSelection
-          selectedFactors={selectedFactors}
-          setSelectedFactors={setSelectedFactors}
-        />
-        <PersonalNotes
-          personalNotes={personalNotes}
-          setPersonalNotes={setPersonalNotes}
-        />
+      <MoodSelection
+        selectedMood={selectedMood}
+        setSelectedMood={setSelectedMood}
+      />
+      <EnergyLevelSelector
+        energyLevel={energyLevel}
+        setEnergyLevel={setEnergyLevel}
+      />
+      <FactorsSelection
+        selectedFactors={selectedFactors}
+        setSelectedFactors={setSelectedFactors}
+      />
+      <PersonalNotes
+        personalNotes={personalNotes}
+        setPersonalNotes={setPersonalNotes}
+      />
 
-        <div className="flex justify-center">
-          <button className="text-primary-dark w-full max-w-2xl cursor-pointer rounded-xl bg-blue-500 px-5 py-2 font-medium">
-            Salvar Registro do Dia
-          </button>
-        </div>
+      <div className="flex justify-center">
+        <button className="text-primary-dark w-full max-w-2xl cursor-pointer rounded-xl bg-blue-500 px-5 py-2 font-medium">
+          Salvar Registro do Dia
+        </button>
       </div>
     </section>
   );
