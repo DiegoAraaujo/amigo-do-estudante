@@ -27,16 +27,13 @@ const ProfileForm = () => {
         darkTheme ? "bg-surface-dark" : "bg-surface-light"
       } p-6 flex flex-col gap-3 rounded-xl`}
     >
-      <div className="flex justify-between items-center">
-        <h2
-          className={`font-semibold text-xl md:text-2xl ${
-            darkTheme ? "text-primary-dark" : "text-primary-light"
-          }`}
-        >
-          Informações Pessoais
-        </h2>
-        <ProfileFormActions editMode={editMode} setEditMode={setEditMode} />
-      </div>
+      <h2
+        className={`font-semibold text-xl md:text-2xl ${
+          darkTheme ? "text-primary-dark" : "text-primary-light"
+        }`}
+      >
+        Informações Pessoais
+      </h2>
 
       <div className="grid sm:grid-cols-2 gap-3">
         <ProfileInput
@@ -104,6 +101,9 @@ const ProfileForm = () => {
         onChange={(e) => setBiography(e.target.value)}
         disabled={!editMode}
       />
+      <div className="flex justify-end mt-3">
+        <ProfileFormActions editMode={editMode} setEditMode={setEditMode} />
+      </div>
     </form>
   );
 };

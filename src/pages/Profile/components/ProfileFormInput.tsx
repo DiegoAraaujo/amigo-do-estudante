@@ -22,7 +22,7 @@ const ProfileInput = ({
       <label
         className={`${
           darkTheme ? "text-primary-dark" : "text-primary-light"
-        } font-medium`}
+        } font-medium text-sm`}
       >
         {label}
       </label>
@@ -31,14 +31,14 @@ const ProfileInput = ({
         value={value}
         onChange={onChange}
         disabled={disabled}
-        className={`${
+        className={` md:text-base text-sm focus:outline-none ${
           darkTheme
-            ? "bg-dark text-primary-dark placeholder:text-muted-dark"
-            : "bg-light text-primary-light placeholder:text-muted-light"
+            ? "bg-dark text-primary-dark placeholder:text-muted-dark border-outline-dark"
+            : "bg-light text-primary-light placeholder:text-muted-light border-outline-light"
         } py-2 rounded-lg px-6 border outline-none transition ${
           disabled
-            ? "opacity-70 cursor-not-allowed"
-            : "focus:ring-2 ring-accent"
+            ? "opacity-50 cursor-not-allowed"
+            : ""
         }`}
       />
     </div>
