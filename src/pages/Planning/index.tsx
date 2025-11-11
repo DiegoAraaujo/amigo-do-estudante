@@ -10,7 +10,7 @@ const Planning = () => {
   const selectedSubPage = subpage || "myschedule";
 
   return (
-    <main className="max-w-7xl m-auto w-full px-6">
+    <main>
       <div className="md:grid-cols-3 grid gap-6 mb-6">
         <div className="flex gap-2 items-center bg-blue-600/10 rounded-xl p-6">
           <div className="rounded-xl bg-blue-600/20 text-blue-800 px-2 py-1">
