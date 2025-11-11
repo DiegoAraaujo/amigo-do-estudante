@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DarkContextProvider } from "./context/DarkTheme";
 import { PomodoroProvider } from "./context/Pomodoro";
 
-import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import MoodMeasurer from "./pages/MoodMeasurer";
 import Container from "./components/Container";
