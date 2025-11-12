@@ -29,7 +29,7 @@ const DashboardSubmenu = ({
             : "text-primary-light"
         }  sm:text-sm`}
       >
-        Visão Geral
+        <span className="hidden md:inline-block">Visão</span> Geral
       </Link>
       <Link
         to={`/${selectedPeriod}/tasksPreview`}
@@ -53,7 +53,7 @@ const DashboardSubmenu = ({
             : "text-primary-light"
         }  sm:text-sm`}
       >
-        Cronograma
+        Agenda
       </Link>
       <Link
         to={`/${selectedPeriod}/communityPreview`}
