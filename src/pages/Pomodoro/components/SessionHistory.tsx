@@ -18,7 +18,7 @@ const SessionHistory = () => {
     <div
       className={`${
         darkTheme ? "bg-surface-dark" : "bg-surface-light shadow-sm"
-      } flex-1 rounded-xl p-6`}
+      } flex-1 rounded-xl p-6 md:flex-2`}
     >
       <p
         className={`${
@@ -27,7 +27,7 @@ const SessionHistory = () => {
       >
         Últimas Sessões
       </p>
-      <div className="flex items-center justify-center py-6">
+      <div className="flex py-6 h-full">
         {sessions.length > 0 ? (
           <div className="flex flex-col gap-4 sm:flex-row lg:flex-col">
             {sessions.map((session, index) => {
@@ -42,9 +42,11 @@ const SessionHistory = () => {
           </div>
         ) : (
           <p
-            className={`${darkTheme ? "text-muted-dark" : "text-muted-light"}`}
+            className={`${
+              darkTheme ? "text-muted-dark/70" : "text-muted-light"
+            } h-full flex items-center justify-center text-xl w-full`}
           >
-            Nenhuma sessão ainda
+            Nenhuma sessão ainda 😢
           </p>
         )}
       </div>
