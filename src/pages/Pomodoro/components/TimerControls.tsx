@@ -1,3 +1,5 @@
+import ActionButton from "../../../components/ActionButton";
+
 interface TimerControlsProps {
   play: () => void;
   reset: () => void;
@@ -14,38 +16,22 @@ const TimerControls = ({
   return (
     <div className="grid w-full max-w-96 grid-cols-2 gap-3">
       {timerStatus === "not_started" && (
-        <button
-          className={`text-primary-dark cursor-pointer rounded-xl bg-blue-700 px-6 py-2`}
-          onClick={play}
-        >
-          <i className="bi bi-play" /> Iniciar
-        </button>
+        <ActionButton icon="bi bi-play" label="Iniciar" onClick={play} />
       )}
 
       {timerStatus === "running" && (
-        <button
-          className={`text-primary-dark cursor-pointer rounded-xl bg-blue-700 px-6 py-2`}
-          onClick={pause}
-        >
-          Pausar
-        </button>
+        <ActionButton icon="bi bi-pause" label="Pausar" onClick={pause} />
       )}
 
       {timerStatus === "paused" && (
-        <button
-          className={`text-primary-dark cursor-pointer rounded-xl bg-blue-700 px-6 py-2`}
-          onClick={play}
-        >
-          Retomar
-        </button>
+        <ActionButton icon="bi bi-play" label="Retomar" onClick={play} />
       )}
 
-      <button
-        className={`text-primary-dark cursor-pointer rounded-xl bg-blue-700 px-6 py-2`}
+      <ActionButton
+        icon="bi bi-arrow-counterclockwise"
+        label="Reset"
         onClick={reset}
-      >
-        <i className="bi bi-arrow-counterclockwise" /> Reset
-      </button>
+      />
     </div>
   );
 };

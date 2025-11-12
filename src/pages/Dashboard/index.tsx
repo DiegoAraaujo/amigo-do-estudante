@@ -47,12 +47,15 @@ const Dashboard = () => {
       </div>
 
       <div className="flex w-full flex-col gap-8">
-        <DashboardSubmenu selectedPeriod={selectedPeriod} />
+        <DashboardSubmenu
+          selectedPeriod={selectedPeriod}
+          selectedSubpage={selectedSubpage}
+        />
 
-        {selectedSubpage === "generalOverview" ? <GeneralOverview /> : null}
-        {selectedSubpage === "tasksPreview" ? <TasksPreview /> : null}
-        {selectedSubpage === "schedulePreview" ? <SchedulePreview /> : null}
-        {selectedSubpage === "communityPreview" ? <CommunityPreview /> : null}
+        {selectedSubpage === "generalOverview" && <GeneralOverview />}
+        {selectedSubpage === "tasksPreview" && <TasksPreview />}
+        {selectedSubpage === "schedulePreview" && <SchedulePreview />}
+        {selectedSubpage === "communityPreview" && <CommunityPreview />}
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const NavigationMenuDesktop = () => {
     <div className="hidden lg:flex">
       <Link
         to="/"
-        className={`flex cursor-pointer items-center justify-center rounded-xl px-4 py-2 text-sm font-medium hover:bg-[#5AA6F2] hover:text-white ${
+        className={`flex cursor-pointer items-center justify-center rounded-xl px-4 py-2 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >
@@ -20,20 +20,20 @@ const NavigationMenuDesktop = () => {
       </Link>
 
       <div
-        className={`relative flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium hover:bg-[#6aadef]`}
+        className={`relative flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium group`}
         onMouseEnter={() => setHoveredMenu("estudo")}
         onMouseLeave={() => setHoveredMenu(null)}
       >
         <p
-          className={`${
+          className={` ${
             darkTheme ? "text-primary-dark" : "text-primary-light"
           }`}
         >
           Estudo
         </p>
         <i
-          className={`bi bi-chevron-down text-xs transition-transform duration-200 ${
-            hoveredMenu === "estudo" ? "rotate-180 text-white" : ""
+          className={`bi bi-chevron-down text-xs transition-transform duration-200 group-hover:text-primary-dark ${
+            hoveredMenu === "estudo" ? "rotate-180 text-primary-dark" : ""
           } ${darkTheme ? "text-primary-dark" : "text-primary-light"}`}
         />
 
@@ -78,20 +78,20 @@ const NavigationMenuDesktop = () => {
       </div>
 
       <div
-        className="relative flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium hover:bg-[#5AA6F2] hover:text-white"
+        className="relative flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium group"
         onMouseEnter={() => setHoveredMenu("bemestar")}
         onMouseLeave={() => setHoveredMenu(null)}
       >
         <p
-          className={`${
+          className={` ${
             darkTheme ? "text-primary-dark" : "text-primary-light"
           }`}
         >
           Bem-estar
         </p>
         <i
-          className={`bi bi-chevron-down text-xs transition-transform duration-200 ${
-            hoveredMenu === "bemestar" ? "rotate-180 text-white" : ""
+          className={`group-hover:text-primary-dark bi bi-chevron-down text-xs transition-transform duration-200 ${
+            hoveredMenu === "bemestar" ? "rotate-180 text-primary-dark" : ""
           } ${darkTheme ? "text-primary-dark" : "text-primary-light"}`}
         />
 
@@ -108,11 +108,11 @@ const NavigationMenuDesktop = () => {
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
             >
-              <NavigationItem
+              {/* <NavigationItem
                 icon="bi bi-joystick"
                 title="Gamificação"
                 description="Atividades para descompressão"
-              />
+              /> */}
               <Link to="moodmeasurer">
                 <NavigationItem
                   icon="bi bi-emoji-smile"
@@ -127,7 +127,7 @@ const NavigationMenuDesktop = () => {
 
       <Link
         to="/community"
-        className={`flex cursor-pointer items-center justify-center rounded-xl px-4 py-2 text-sm font-medium hover:bg-[#5AA6F2] hover:text-white ${
+        className={`flex cursor-pointer items-center justify-center rounded-xl px-4 py-2 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
           darkTheme ? "text-primary-dark" : "text-primary-light"
         }`}
       >

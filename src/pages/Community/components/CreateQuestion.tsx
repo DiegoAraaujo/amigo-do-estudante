@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
+import ActionButton from "../../../components/ActionButton";
 
 const CreateQuestion = () => {
   const { darkTheme } = useDarkTheme();
@@ -138,12 +139,9 @@ const CreateQuestion = () => {
         </button>
 
         <div className="flex gap-4 w-full justify-start">
-          <button
-            type="submit"
-            className="text-primary-dark flex w-full max-w-40 cursor-pointer items-center justify-center gap-2 rounded-xl border-l-blue-500 bg-blue-600 px-5 py-2 text-sm font-medium"
-          >
-            Publicar Pergunta
-          </button>
+          <div className="w-50">
+            <ActionButton label="Publicar Pergunta" />
+          </div>
           <button
             type="button"
             className={`${

@@ -11,15 +11,17 @@ const PeriodTabs = ({ selectedSubpage, selectedPeriod }: PeriodTabsProps) => {
 
   return (
     <div
-      className={`flex gap-3 rounded-xl border border-gray-300 px-6 py-2 ${
-        darkTheme ? "bg-surface-dark" : "bg-surface-light"
+      className={`flex gap-3 rounded-xl border px-6 py-2 ${
+        darkTheme
+          ? "bg-surface-dark border-outline-dark"
+          : "bg-surface-light border-outline-light"
       }`}
     >
       <Link
         to={`/today/${selectedSubpage}`}
-        className={`cursor-pointer rounded-xl px-6 py-1 text-[16px] font-medium hover:text-primary-dark  hover:bg-blue-600 ${
+        className={`cursor-pointer rounded-xl px-6 py-1 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
           selectedPeriod === "today"
-            ? "bg-[#875AF2] text-primary-dark"
+            ? "bg-menuHighlightColor text-primary-dark"
             : darkTheme
             ? "text-primary-dark"
             : "text-primary-light"
@@ -29,9 +31,9 @@ const PeriodTabs = ({ selectedSubpage, selectedPeriod }: PeriodTabsProps) => {
       </Link>
       <Link
         to={`/week/${selectedSubpage}`}
-        className={`cursor-pointer rounded-xl px-6 py-1 text-[16px] font-medium text-gray-900 hover:bg-blue-400 hover:text-primary-dark ${
+        className={`cursor-pointer rounded-xl px-6 py-1 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
           selectedPeriod === "week"
-            ? "bg-[#875AF2] text-primary-dark"
+            ? "bg-menuHighlightColor text-primary-dark"
             : darkTheme
             ? "text-primary-dark"
             : "text-primary-light"
@@ -41,9 +43,9 @@ const PeriodTabs = ({ selectedSubpage, selectedPeriod }: PeriodTabsProps) => {
       </Link>
       <Link
         to={`/month/${selectedSubpage}`}
-        className={`cursor-pointer rounded-xl px-6 py-1 text-[16px] font-medium hover:bg-blue-400 hover:text-primary-dark  ${
+        className={`cursor-pointer rounded-xl px-6 py-1 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
           selectedPeriod === "month"
-            ? "bg-[#875AF2] text-primary-dark"
+            ? "bg-menuHighlightColor text-primary-dark"
             : darkTheme
             ? "text-primary-dark"
             : "text-primary-light"

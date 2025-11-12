@@ -1,5 +1,4 @@
-import { Link, useParams } from "react-router-dom";
-import { useDarkTheme } from "../../hooks/UseDarkTheme";
+import { useParams } from "react-router-dom";
 
 import MoodHistory from "./components/MoodHistory";
 import MoodOverview from "./components/MoodOverview";
@@ -10,7 +9,6 @@ import MoodSubmenu from "./components/MoodSubmenu";
 const MoodMeasurer = () => {
   const { subpage } = useParams();
   const selectedSubpage = subpage || "moodregisterform";
-  const { darkTheme } = useDarkTheme();
 
   const statsCards = [
     {

@@ -1,3 +1,4 @@
+import ActionButton from "../../../components/ActionButton";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 import TaskPreviewItem from "./TaskPreviewItem";
 
@@ -75,9 +76,9 @@ const TasksPreview = () => {
             );
           })}
         </div>
-        <button className="w-full cursor-pointer rounded-2xl border border-gray-300 bg-[#F9F9FA] py-2 text-center text-sm font-medium hover:bg-[#5AA6F2] hover:text-white">
-          <i className="bi bi-plus"></i> Criar Nova Tarefa
-        </button>
+        <div className=" w-full flex md:justify-start justify-center">
+          <ActionButton icon="bi bi-plus" label="Criar Nova Tarefa" />
+        </div>
       </div>
     </section>
   );

@@ -81,11 +81,11 @@ const NavigationMenuMobile = ({ setMenuVisible }: NavigationMenuProps) => {
             description="Monitore seu bem estar"
           />
         </Link>
-        <NavigationItem
+        {/* <NavigationItem
           icon="bi bi-joystick"
           title="Gamificação"
           description="Conquiste suas recompensas"
-        />
+        /> */}
       </div>
 
       <div>

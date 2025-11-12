@@ -1,3 +1,4 @@
+import ActionButton from "../../../components/ActionButton";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 import CommunityPreviewItem from "./CommunityPreviewItem";
 
@@ -25,9 +26,13 @@ const CommunityPreview = () => {
           <CommunityPreviewItem />
           <CommunityPreviewItem />
         </div>
-        <button className="w-full cursor-pointer rounded-2xl border border-gray-300 bg-[#F9F9FA] py-2 text-center text-sm font-medium hover:bg-[#5AA6F2] hover:text-white">
-          <i className="bi bi-people-fill"></i> Participar da comunidade
-        </button>
+
+        <div className=" w-full flex md:justify-start justify-center">
+          <ActionButton
+            icon="bi bi-people-fill"
+            label="Participar da comunidade"
+          />
+        </div>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import EnergyLevelSelector from "./EnergyLevelSelector";
 import FactorsSelection from "./FactorsSelection";
 import MoodSelection from "./MoodSelection";
 import PersonalNotes from "./PersonalNotes";
+import ActionButton from "../../../components/ActionButton";
 
 const MoodRegisterForm = () => {
   const { darkTheme } = useDarkTheme();
@@ -48,10 +49,8 @@ const MoodRegisterForm = () => {
         setPersonalNotes={setPersonalNotes}
       />
 
-      <div className="flex justify-center">
-        <button className="text-primary-dark w-full max-w-2xl cursor-pointer rounded-xl bg-blue-500 px-5 py-2 font-medium">
-          Salvar Registro do Dia
-        </button>
+      <div className="flex md:justify-start justify-center">
+        <ActionButton label="Salvar Registro do Dia" />
       </div>
     </section>
   );

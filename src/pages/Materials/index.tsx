@@ -2,11 +2,16 @@ import { useState } from "react";
 import { useDarkTheme } from "../../hooks/UseDarkTheme";
 import MaterialCard from "./components/MaterialCard";
 import AddMaterialModal from "./components/AddMaterialModal";
+import ActionButton from "../../components/ActionButton";
 
 const Materials = () => {
   const { darkTheme } = useDarkTheme();
   const [isAddMaterialModalOpen, setIsAddMaterialModalOpen] =
     useState<boolean>(false);
+
+  const toogleModal = () => {
+    setIsAddMaterialModalOpen(!isAddMaterialModalOpen);
+  };
 
   return (
     <section>
@@ -16,12 +21,9 @@ const Materials = () => {
         />
       )}
       <div className="flex justify-end mb-6">
-        <button
-          className="bg-blue-500 text-primary-dark max-w-50 w-full px-6 py-2 rounded-lg font-semibold cursor-pointer"
-          onClick={() => setIsAddMaterialModalOpen(true)}
-        >
-          Adicionar Material
-        </button>
+        <div className="w-60">
+          <ActionButton label="Adicionar Material" onClick={toogleModal} />
+        </div>
       </div>
       <div
         className={`gap-4 grid lg:grid-cols-2 p-6 rounded-xl ${

@@ -15,42 +15,36 @@ const MoodSubmenu = ({ selectedSubpage }: MoodSubmenuProps) => {
     >
       <Link
         to="/moodmeasurer/moodregisterform"
-        className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${
-          darkTheme ? "text-muted-dark" : "text-muted-light"
-        } py-2 text-sm font-medium ${
+        className={`flex cursor-pointer items-center justify-center rounded-xl px-6 hover:scale-105 transition-transform duration-300 py-2 text-sm font-medium ${
           selectedSubpage === "moodregisterform"
-            ? darkTheme
-              ? "bg-card-dark"
-              : "bg-card-light"
-            : ""
+            ? "bg-menuHighlightColor text-primary-dark"
+            : darkTheme
+            ? "text-primary-dark"
+            : "text-primary-light"
         } text-center`}
       >
         Registro
       </Link>
       <Link
         to="/moodmeasurer/moodhistory"
-        className={`flex cursor-pointer items-center justify-center rounded-md px-6 ${
-          darkTheme ? "text-muted-dark" : "text-muted-light"
-        } py-2 text-sm font-medium ${
+        className={`flex cursor-pointer items-center justify-center rounded-xl px-6 hover:scale-105 transition-transform duration-300  py-2 text-sm font-medium text-center ${
           selectedSubpage === "moodhistory"
-            ? darkTheme
-              ? "bg-card-dark"
-              : "bg-card-light"
-            : ""
+            ? "bg-menuHighlightColor text-primary-dark"
+            : darkTheme
+            ? "text-primary-dark"
+            : "text-primary-light"
         } text-center`}
       >
         Historico
       </Link>
       <Link
         to="/moodmeasurer/moodoverview"
-        className={`flex cursor-pointer items-center justify-center rounded-md ${
-          darkTheme ? "text-muted-dark" : "text-muted-light"
-        } px-6 py-2 text-sm font-medium ${
+        className={`flex cursor-pointer items-center justify-center rounded-xl hover:scale-105 transition-transform duration-300  px-6 py-2 text-sm font-medium  text-center ${
           selectedSubpage === "moodoverview"
-            ? darkTheme
-              ? "bg-card-dark"
-              : "bg-card-light"
-            : ""
+            ? "bg-menuHighlightColor text-primary-dark"
+            : darkTheme
+            ? "text-primary-dark"
+            : "text-primary-light"
         } text-center`}
       >
         Visão Geral

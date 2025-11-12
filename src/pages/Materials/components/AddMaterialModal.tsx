@@ -1,5 +1,6 @@
 import type React from "react";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
+import ActionButton from "../../../components/ActionButton";
 
 interface AddMaterialModalProps {
   setIsAddMaterialModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -134,9 +135,7 @@ const AddMaterialModal = ({
             ></textarea>
           </div>
           <div className="flex justify-center">
-            <button className="bg-blue-500 text-primary-dark max-w-50 w-full px-6 py-2 rounded-lg font-semibold cursor-pointer">
-              Adicionar Material
-            </button>
+            <ActionButton label="Adicionar Material" />
           </div>
         </form>
       </div>

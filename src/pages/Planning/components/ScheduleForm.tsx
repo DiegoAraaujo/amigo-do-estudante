@@ -1,3 +1,4 @@
+import ActionButton from "../../../components/ActionButton";
 import { useDarkTheme } from "../../../hooks/UseDarkTheme";
 
 const ScheduleForm = () => {
@@ -113,9 +114,9 @@ const ScheduleForm = () => {
           </select>
         </div>
       </div>
-      <button className="bg-blue-500 text-primary-dark rounded-xl px-6 py-2 font-medium cursor-pointer">
-        Adicionar à Agenda
-      </button>
+      <div className="flex md:justify-start justify-center">
+        <ActionButton label="Adicionar à Agenda" />
+      </div>
     </form>
   );
 };

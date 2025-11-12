@@ -22,11 +22,11 @@ const QuickActions = ({ selectedSubpage }: QuickActionsProps) => {
       <div className="grid gap-3">
         <Link
           to="/community/allquestions"
-          className={`text-primary-dark flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium ${
+          className={`flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
             selectedSubpage === "allquestions"
-              ? "bg-blue-600"
+              ? "bg-menuHighlightColor text-primary-dark"
               : darkTheme
-              ? "bg-dark"
+              ? "bg-dark text-primary-dark"
               : "bg-light text-primary-light"
           }`}
         >
@@ -35,11 +35,11 @@ const QuickActions = ({ selectedSubpage }: QuickActionsProps) => {
         </Link>
         <Link
           to="/community/createquestion"
-          className={`text-primary-dark flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium ${
+          className={`flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
             selectedSubpage === "createquestion"
-              ? "bg-blue-600"
+              ? "bg-menuHighlightColor text-primary-dark"
               : darkTheme
-              ? "bg-dark"
+              ? "bg-dark text-primary-dark"
               : "bg-light text-primary-light"
           }`}
         >
@@ -48,11 +48,11 @@ const QuickActions = ({ selectedSubpage }: QuickActionsProps) => {
         </Link>
         <Link
           to="/community/myquestions"
-          className={`text-primary-dark flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium ${
+          className={`flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
             selectedSubpage === "myquestions"
-              ? "bg-blue-600"
+              ? "bg-menuHighlightColor text-primary-dark"
               : darkTheme
-              ? "bg-dark"
+              ? "bg-dark text-primary-dark"
               : "bg-light text-primary-light"
           }`}
         >
@@ -61,11 +61,11 @@ const QuickActions = ({ selectedSubpage }: QuickActionsProps) => {
         </Link>
         <Link
           to="/community/myanswers"
-          className={`text-primary-dark flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium ${
+          className={`flex w-full max-w-2xl cursor-pointer items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-medium hover:scale-105 transition-transform duration-300 ${
             selectedSubpage === "myanswers"
-              ? "bg-blue-600"
+              ? "bg-menuHighlightColor text-primary-dark"
               : darkTheme
-              ? "bg-dark"
+              ? "bg-dark text-primary-dark"
               : "bg-light text-primary-light"
           }`}
         >
