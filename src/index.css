@@ -14,8 +14,8 @@
   --color-outline-light: #d1d5dc;
   --color-outline-dark: #3a4250;
   --color-outline-light: #d1d5dc;
-  --color-menuHighlightColor: #875AF2;
-  --color-button: #2B7FFF;
+  --color-menuHighlightColor: #875af2;
+  --color-button: #2b7fff;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
