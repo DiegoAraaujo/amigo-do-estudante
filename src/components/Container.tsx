@@ -1,18 +1,16 @@
-import React from "react";
+import { Outlet } from "react-router-dom";
 import { useDarkTheme } from "../hooks/UseDarkTheme";
 import Header from "./Header";
 
-interface ContainerProps {
-  children: React.ReactNode;
-}
-
-const Container = ({ children }: ContainerProps) => {
+const Container = () => {
   const { darkTheme } = useDarkTheme();
 
   return (
-    <div className={`${darkTheme ? "bg-dark" : "bg-light"} min-h-dvh `}>
+    <div className={`${darkTheme ? "bg-dark" : "bg-light"} min-h-dvh`}>
       <Header />
-      <main className="max-w-7xl w-full md:p-8 m-auto p-6">{children}</main>
+      <main className="max-w-7xl w-full md:p-8 m-auto p-6">
+        <Outlet />
+      </main>
     </div>
   );
 };
